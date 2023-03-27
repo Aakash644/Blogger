@@ -17,7 +17,7 @@
 ###  After clonning the repo, you need to install the required packages and libraries, run this command in the project directory :
 
 ```bash
-pip install -r requirements.txt
+pip install -r Requirements.txt
 ```
 ```bash
 python app.py
