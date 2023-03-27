@@ -12,8 +12,16 @@
 ##  <h2 id="Features">Features</h2> 
 ### <li>Create, Update, Delete and Read Blogs</li><li>Signin/Signup</li><li>Commenting System</li></ul> 
 
-## <h2 id="screen">Screenshots</h2>
+## <h2 id="Features">Features</h2> 
+## <h2 id="Contribute">How to contribute</h2> 
+###  After clonning the repo, you need to install the required packages and libraries, run this command in the project directory :
 
+```bash
+pip install -r requirements.txt
+```
+```bash
+python app.py
+```
 ![Capture](https://user-images.githubusercontent.com/92630714/227890913-c767f01d-6530-407d-90d1-06496f690c0f.PNG) 
 <br>
 ![Capture1](https://user-images.githubusercontent.com/92630714/227891094-b2009dac-2d32-4995-b4c6-d70ced3ad20e.PNG)
