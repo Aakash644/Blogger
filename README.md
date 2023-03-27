@@ -2,7 +2,7 @@
 ![4](https://user-images.githubusercontent.com/92630714/227880450-045a1f49-e718-4ef1-8933-43044721e1e4.png)
 
 ## Table of Contents
-### <ul><li><a href="#about">About</a></li><li><a href="#tech">Technologies Used</a></li><li><a href="#screen">Screenshots</a></li><li><a href="#Features">Features</a></li></ul>
+### <ul><li><a href="#about">About</a></li><li><a href="#tech">Tech Used</a></li><li><a href="#screen">Screenshots</a></li><li><a href="#Features">Features</a></li></ul>
 ## <h2 id="about">About</h2>
 ### A blogging platform to share your ideas, stories, journey and expertise.
 ## <h2 id="tech">Tech used</h2> 
@@ -12,7 +12,7 @@
 ##  <h2 id="Features">Features</h2> 
 ### <li>Create, Update, Delete and Read Blogs</li><li>Signin/Signup</li><li>Commenting System</li></ul> 
 
-## <h2 id="Features">Features</h2> 
+
 ## <h2 id="Contribute">How to contribute</h2> 
 ###  After clonning the repo, you need to install the required packages and libraries, run this command in the project directory :
 
