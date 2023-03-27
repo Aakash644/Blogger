@@ -1,9 +1,6 @@
 from django.shortcuts import render
 from pyrebase import pyrebase 
-import os 
-from distutils.log import debug
-from fileinput import filename
-from werkzeug.utils  import secure_filename 
+
 
 firebaseConfig = {
     "apiKey": "AIzaSyCiDJ61Z2YZgXFTC9KCtRXmjKXxKmZGwGc",
@@ -19,41 +16,10 @@ firebase = pyrebase.initialize_app(firebaseConfig)
 db=firebase.database()
 auth=firebase.auth()
 storage=firebase.storage()
-# try:
-#    email=input("enter your email")
-#    password=input("enter your password")
-#    auth.sign_in_with_email_and_password(email,password)
-# except:
-#     print("invalid user or password")
-
-# signup
-# email=input("enter your email")
-# password=input("enter your password")
-# confirm_password=input("enter your password again")
-# if(password==confirm_password):
-#     auth.create_user_with_email_and_password(email,password)
-# else:
-#     print("Both passwords are different.\n")
-
-
-# storage
-# filename=input("enter the filename:")
-# cloudfilename=input("enter the cloud filename:")
-# storage.child(cloudfilename).put(filename)
-
-# data = {
-#     "name": "Aakash",
-
-#     "gender": "male",
-#     "dob": "25/03/2002",
-#     "email": "aakshkr10@gmail.com"
-# }
-# db.child("user").child("user1").set(data)
 
 
 from flask import  *
 app=Flask(__name__,template_folder="templates",static_folder="templates/img")
-app.config['UPLOAD_FOLDER'] = "C:\\Users\\Acer\\Desktop\\New folder (4)\\templates\\img"
 @app.route('/home',methods=['GET','POST'])
 def home(): 
   blogs=db.child("blogs").get()
@@ -115,9 +81,7 @@ def add(user):
     author=request.form.get("author")
     content=request.form.get("content") 
     desc=request.form.get("desc")   
-    f = request.files['file'] 
-    print(f)
-    # f.save(f.filename) 
+    
     data={"title":title,"author":author,"content":content,"desc":desc}
     print(data)
     db.child("blogs").child(title).set(data)
